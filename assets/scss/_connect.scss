@@ -2,10 +2,21 @@
   padding: 3em;
 }
 .connections {
-  font-size: 1.2em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 3em;
+  text-decoration: none;
+  .icon {
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: .5em;
+    &:hover {
+      color: $color-primary;
+    }
+    &:before {
+      margin-right: 10px;
+    }
+  }
 }

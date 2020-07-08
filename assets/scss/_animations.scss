@@ -8,3 +8,21 @@
     bottom: 0;
   }
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@mixin fadeIn($duration:1s, $delay: 0s){
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}

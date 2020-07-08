@@ -1,3 +1,11 @@
 .education {
   padding: 3em;
+  &--schools {
+    padding: 3em;
+    text-align: center;
+  }
+  &--logo {
+      max-width: 30px;
+      margin-right: 10px;
+  }
 }
