@@ -1,3 +1,17 @@
 .projects {
   padding: 3em;
+  .icons {
+    font-size: .7em;
+    display: flex;
+    margin-left: 10px;
+    .icon {
+      margin: 0 2px;
+    }
+  }
+}
+.project {
+  &--label {
+    display: flex;
+    align-items: center;
+  }
 }
