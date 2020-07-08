@@ -1,0 +1,18 @@
+.experience {
+  padding: 3em;
+  &--item {
+    margin: 3em 0;
+    &-label {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .icons {
+    font-size: .7em;
+    display: flex;
+    margin-left: 10px;
+    .icon {
+      margin: 0 2px;
+    }
+  }
+}

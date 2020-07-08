@@ -1,0 +1,10 @@
+@keyframes wave {
+  0% {
+    left: -100%;
+    bottom: -20px
+  }
+  100% {
+    left: 100%;
+    bottom: 0;
+  }
+}

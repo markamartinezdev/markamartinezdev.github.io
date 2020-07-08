@@ -1,0 +1,33 @@
+.app-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient($color-secondary, $color-three);
+  color: #fff;
+  h1, h2 {
+    display: block;
+    text-align: center;
+  }
+  h1 {
+    animation-delay: .3s;
+    animation-duration: 3s;
+  }
+  h2 {
+    animation-delay: .5s;
+    animation-duration: 3s;
+  }
+}
+
+.app-body {
+  margin-top: -110px;
+  z-index: 1;
+  background: #fff;
+  animation-delay: 1.1s;
+  animation-duration: 1.5s;
+}
+
+.label {
+  color: $color-primary;
+  text-align: center;
+}

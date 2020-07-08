@@ -1,0 +1,86 @@
+@mixin icon ($icon){
+  &:before {
+    font-family: brand-icon;
+    content: $icon;
+  }
+}
+
+.icon {
+  display: flex;
+  &--javascript {
+    @include icon('\e905');
+    color: #f7df1e;
+  }
+  &--html {
+    @include icon('\e911');
+    color: #e34f26;
+  }
+  &--css {
+    @include icon('\e910');
+    color: #1572b6;
+  }
+  &--vue {
+    @include icon('\e90d');
+    color: #4fc08d;
+  }
+  &--sass {
+    @include icon('\e90c');
+    color: #c69;
+  }
+  &--react {
+    @include icon('\e90b');
+    color: #61dafb;
+  }
+  &--webpack {
+    @include icon('\e90e');
+    color: #8dd6f9;
+  }
+  &--node {
+    @include icon('\e909');
+    color: #393;
+  }
+  &--graphql {
+    @include icon('\e904');
+    color: #e10098;
+  }
+  &--npm {
+    @include icon('\e90a');
+    color: #cb3837;
+  }
+  &--yarn {
+    @include icon('\e90f');
+    color: #2c8ebb;
+  }
+  &--jquery {
+    @include icon('\e907');
+    color: #0769ad;
+  }
+  &--photoshop {
+    @include icon('\e901');
+    color: #00c8ff;
+  }
+  &--illustrator {
+    @include icon('\e900');
+    color: #ff7c00;
+  }
+  &--jest {
+    @include icon('\e906');
+    color: #c21325;
+  }
+  &--node {
+    @include icon('\e909');
+    color: #393;
+  }
+  &--linkedin {
+    @include icon('\e908');
+    color: #0077b5;
+  }
+  &--github {
+    @include icon('\e903');
+    color: #444;
+  }
+  &--email {
+    @include icon('\e912');
+    color: #d14836;
+  }
+}

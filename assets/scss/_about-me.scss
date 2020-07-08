@@ -1,0 +1,16 @@
+.about-me {
+  &--image {
+    border-radius: 100%;
+    border: none;
+    position: absolute;
+    max-width: 160px;
+    &-container {
+      background-color: $color-four;
+      padding: 0em 3em 6em;
+      border-radius: 3em;
+    }
+  }
+  &-text {
+    padding: 3em;
+  }
+}

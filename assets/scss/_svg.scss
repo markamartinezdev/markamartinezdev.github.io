@@ -1,0 +1,81 @@
+.waves {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
+  height: 100%;
+  pointer-events: none;
+
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: -100%;
+  animation-name: wave;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  pointer-events: all;
+  path {
+    d: path("M 0 100 q 50 -25 100 0");
+    transition: all 1.2s ease;
+  }
+  &:hover {
+    path {
+      d: path("M 0 100 q 50 -45 100 0");
+    } 
+  }
+  &--1 {
+    animation-duration: 5s;
+    animation-delay: .5s;
+    opacity: .5;
+    fill: $color-four;
+  }
+  &--2 {
+    animation-duration: 7s;
+    opacity: .5;
+    fill: $color-three;
+  }
+  &--3 {
+    animation-duration: 9s;
+    animation-delay: .3s;
+    opacity: .4;
+    fill: $color-primary;
+  }
+  &--4 {
+    animation-duration: 9s;
+    animation-delay: 1.5s;
+    opacity: .4;
+    fill: $color-primary;
+    animation-direction: alternate;
+  }
+  &--6 {
+    animation-duration: 7s;
+    opacity: .4;
+    fill: $color-primary;
+    animation-direction: alternate;
+  }
+  &--7 {
+    animation-duration: 5s;
+    animation-delay: 1s;
+    opacity: .5;
+    fill: $color-three;
+    animation-direction: alternate;
+  }
+}
+
+.oval {
+  pointer-events: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom:solid #fff 90px;
+  svg {
+    path {
+      d: path("M 0 100 q 50 -25 100 0");
+      transition: all 0.5s ease;
+      fill: #fff;
+    }
+  }
+}
