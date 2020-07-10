@@ -1,5 +1,8 @@
 .connect {
   padding: 3em;
+  @include mobile {
+    padding: 1em;
+  }
 }
 .connections {
   display: flex;
@@ -8,10 +11,16 @@
   align-items: center;
   padding: 3em;
   text-decoration: none;
+  @include mobile {
+    padding: 1em;
+  }
   .icon {
     font-size: 1.5em;
     text-decoration: none;
     padding: .5em;
+    @include mobile {
+      font-size: 1.2em;
+    }
     &:hover {
       color: $color-primary;
     }

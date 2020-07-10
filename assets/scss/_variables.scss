@@ -4,3 +4,25 @@ $color-secondary: #2a1b3c;
 $color-three: #44318d;
 $color-four: #8265a7;
 $color-five: #a4b3b6;
+
+$color-text: darken($color-secondary, 5%);
+
+// Breakpoints
+@mixin mobile {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
+

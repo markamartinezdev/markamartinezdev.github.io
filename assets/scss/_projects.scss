@@ -1,5 +1,8 @@
 .projects {
   padding: 3em;
+  @include mobile {
+    padding: 1em;
+  }
   .icons {
     font-size: .7em;
     display: flex;
@@ -10,8 +13,19 @@
   }
 }
 .project {
+  padding: 2em 0;
+  text-decoration: none;
+  color: $color-text;
+  cursor: pointer;
+  &:hover {
+    color: $color-text;
+    text-decoration: none;
+  }
   &--label {
     display: flex;
     align-items: center;
+  }
+  &--thumbnail {
+    padding: 2em 0;
   }
 }

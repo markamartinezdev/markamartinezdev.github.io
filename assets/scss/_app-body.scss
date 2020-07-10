@@ -5,6 +5,10 @@
   height: 100vh;
   background: linear-gradient($color-secondary, $color-three);
   color: #fff;
+  @include mobile {
+    align-items: flex-start;
+    padding: 5em 1em;
+  }
   h1, h2 {
     display: block;
     text-align: center;
@@ -25,9 +29,13 @@
   animation-duration: 1.5s;
   border-radius: 100% 100% 0 0;
   @include fadeIn(3s, .5s);
+  @include mobile {
+    margin-top: -50px;
+  }
 }
 
 .label {
-  color: $color-primary;
+  color: $color-three;
   text-align: center;
+  text-transform: uppercase;
 }

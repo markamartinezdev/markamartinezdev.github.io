@@ -1,5 +1,8 @@
 .education {
   padding: 3em;
+  @include mobile {
+    padding: 1em;
+  }
   &--schools {
     padding: 3em;
     text-align: center;

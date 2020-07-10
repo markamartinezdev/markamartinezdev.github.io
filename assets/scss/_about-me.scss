@@ -12,5 +12,8 @@
   }
   &-text {
     padding: 3em;
+    @include mobile {
+      padding: 1em;
+    }
   }
 }
